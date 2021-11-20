@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-info text-center text-white">
+                    <h4>1-misol. Musbat son bo'lsa 1ga oshiriladi, ask holda o'zgartirilmaydi.</h4>
+                    <input id="son" type="number" class="form-control mt-2">
+                    <button onclick="hisoblash()" type="button" class="btn btn-success btn-block mt-3">
+                        Hisoblash
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h4 id="result"></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-info text-center text-white">
+                    <h4>2-misol. Musbat son bo'lsa 1ga oshiriladi, ask holda 2ga kamaytiriladi.</h4>
+                    <input id="son2" type="number" class="form-control mt-2">
+                    <button onclick="hisoblash2()" type="button" class="btn btn-success btn-block mt-3">
+                        Hisoblash
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h4 id="result2"></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-info text-center text-white">
+                    <h4>3-misol. Musbat son bo'lsa 1ga oshiriladi, ask holda 2ga kamaytiriladi, 0ga teng bo'lsa 10ni o'zlashtiradi.</h4>
+                    <input id="son3" type="number" class="form-control mt-2">
+                    <button onclick="hisoblash3()" type="button" class="btn btn-success btn-block mt-3">
+                        Hisoblash
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h4 id="result3"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-info text-center text-white">
+                    <h4>4-misol. 3ta butun son orasidan musbat sonlarning sonini aniqlaydi.</h4>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <label for="son4">1-son</label>
+                        <input id="son4" type="number" class="form-control mt-2 w-75">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <label for="son5">2-son</label>
+                        <input id="son5" type="number" class="form-control mt-2 w-75">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <label for="son6">3-son</label>
+                        <input id="son6" type="number" class="form-control mt-2 w-75">
+                    </div>
+
+                    <button onclick="hisoblash4()" type="button" class="btn btn-success btn-block mt-3">
+                        Hisoblash
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h4 id="result4"></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-info text-center text-white">
+                    <h4>5-misol. 3ta butun son orasidan musbat va manfiy sonlarning sonini aniqlaydi.</h4>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <label for="son7">1-son</label>
+                        <input id="son7" type="number" class="form-control mt-2 w-75">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <label for="son8">2-son</label>
+                        <input id="son8" type="number" class="form-control mt-2 w-75">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <label for="son9">3-son</label>
+                        <input id="son9" type="number" class="form-control mt-2 w-75">
+                    </div>
+
+                    <button onclick="hisoblash5()" type="button" class="btn btn-success btn-block mt-3">
+                        Hisoblash
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h4 id="result5"></h4>
+                    <h4 id="result6"></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-info text-center text-white">
+                    <h4>6-misol. Sonlarning kattasini aniqlaydi.</h4>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <label for="son10">1-son</label>
+                        <input id="son10" type="number" class="form-control mt-2 w-75">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <label for="son11">2-son</label>
+                        <input id="son11" type="number" class="form-control mt-2 w-75">
+                    </div>
+
+                    <button onclick="hisoblash6()" type="button" class="btn btn-success btn-block mt-3">
+                        Hisoblash
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h4 id="result7"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-info text-center text-white">
+                    <h4>7-misol. Sonlarning kichigining tartib raqamini aniqlaydi.</h4>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <label for="son12">1-son</label>
+                        <input id="son12" type="number" class="form-control mt-2 w-75">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <label for="son13">2-son</label>
+                        <input id="son13" type="number" class="form-control mt-2 w-75">
+                    </div>
+
+                    <button onclick="hisoblash7()" type="button" class="btn btn-success btn-block mt-3">
+                        Hisoblash
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h4 id="result8"></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-info text-center text-white">
+                    <h4>8-misol. Sonlarning avval kattasini keyin kichigini chiqaradi.</h4>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <label for="son14">1-son</label>
+                        <input id="son14" type="number" class="form-control mt-2 w-75">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <label for="son15">2-son</label>
+                        <input id="son15" type="number" class="form-control mt-2 w-75">
+                    </div>
+
+                    <button onclick="hisoblash8()" type="button" class="btn btn-success btn-block mt-3">
+                        Hisoblash
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h4 id="result9"></h4>
+                    <h4 id="result10"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-dark text-center text-white">
+                    <h4>28-misol. Yilni kiriting.</h4>
+                    <input id="son16" type="number" class="form-control mt-2">
+                    <button onclick="hisoblash9()" type="button" class="btn btn-success btn-block mt-3">
+                        Aniqlash
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h4 id="result11"></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-dark text-center text-white">
+                    <h4>29-misol. Sonning turini aniqlash.</h4>
+                    <input id="son17" type="number" class="form-control mt-2">
+                    <button onclick="hisoblash10()" type="button" class="btn btn-success btn-block mt-3">
+                        Aniqlash
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h4 id="result12"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
